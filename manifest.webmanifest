@@ -1,14 +1,1 @@
-{
-  "name": "THE SYSTEM — Life RPG",
-  "short_name": "THE SYSTEM",
-  "description": "Ton RPG de vraie vie : quêtes, XP, niveaux, stats, boss et récompenses.",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#05070a",
-  "theme_color": "#070b12",
-  "orientation": "portrait",
-  "icons": [
-    {"src":"icon-180.png","sizes":"180x180","type":"image/png"},
-    {"src":"icon-512.png","sizes":"512x512","type":"image/png"}
-  ]
-}
+{"name":"THE SYSTEM V3","short_name":"THE SYSTEM","start_url":"./","display":"standalone","background_color":"#05070a","theme_color":"#05070a"}

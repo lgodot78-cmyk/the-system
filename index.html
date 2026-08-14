@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>THE SYSTEM // V2</title>
+<title>THE SYSTEM // V3</title>
 <style>
 :root{--bg:#05070a;--panel:#0c1118;--panel2:#111923;--line:#202b39;--txt:#eef4ff;--muted:#7f8da1;--blue:#6ca7ff;--violet:#9d73ff;--green:#52d98a;--red:#ff6478;--gold:#f4ca63}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#1a2941 0,#05070a 48%);color:var(--txt);font:14px Inter,system-ui,Segoe UI,sans-serif;min-height:100vh}
@@ -12,21 +12,15 @@ button,input,select{font:inherit}button{background:#111a25;border:1px solid var(
 .nav{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:16px}.nav button{font-size:11px;letter-spacing:1px;color:#aab8ca}.nav button.active{background:#19283b;border-color:#587eaf;color:#fff}
 .page{display:none}.page.active{display:block}.grid{display:grid;grid-template-columns:1.35fr .65fr;gap:15px}.card{background:linear-gradient(145deg,rgba(15,22,31,.97),rgba(7,10,15,.97));border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 15px 45px #0006}.hero{display:grid;grid-template-columns:116px 1fr;gap:18px;align-items:center}.rankbox{height:116px;width:116px;border-radius:16px;display:grid;place-items:center;background:#08101a;border:1px solid #3c536f;box-shadow:inset 0 0 35px #518eff16}.rankbox b{font-size:52px}.muted{color:var(--muted)}.tiny{font-size:11px}.level{font-size:29px;font-weight:1000}.bar{height:10px;background:#06090e;border:1px solid var(--line);border-radius:20px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--violet));width:0%;transition:.35s}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.stat{background:#080d14;border:1px solid var(--line);border-radius:12px;padding:12px}.stat b{display:block;font-size:24px;margin-top:4px}.title{font-size:12px;letter-spacing:2px;color:#b1bfd1;margin:0 0 12px}.quest{display:flex;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid #17202b}.quest:last-child{border-bottom:0}.quest input{width:19px;height:19px;accent-color:var(--blue)}.quest.done .qname{text-decoration:line-through;color:#617085}.qname{font-weight:850}.qxp{margin-left:auto;color:var(--gold);font-weight:900}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#142238;color:#a9c9ff;font-size:10px;font-weight:900}.boss{border-color:#5a303a;background:linear-gradient(145deg,#190f14,#0b0d12)}.bossbar .fill{background:linear-gradient(90deg,#ff5c73,#ff9a67)}.item{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px;border:1px solid var(--line);background:#080d14;border-radius:11px;margin-bottom:8px}.item strong{display:block}.item small{color:var(--muted)}.shopbtn{min-width:90px}.log{padding:9px 0;border-bottom:1px solid #18212d;font-size:12px}.achievement{padding:12px;border:1px solid var(--line);border-radius:11px;background:#080d14;margin-bottom:8px}.achievement.locked{opacity:.45}.tabs-title{font-size:18px;font-weight:950;margin:0}.notice{padding:12px;border:1px solid #26364b;background:#0b121c;border-radius:11px;color:#b6c5d8;margin-bottom:12px}.form{display:grid;grid-template-columns:1fr 100px 100px;gap:7px}.form input{background:#070b11;color:#fff;border:1px solid var(--line);padding:10px;border-radius:8px;outline:0}.empty{padding:20px;text-align:center;color:var(--muted)}footer{text-align:center;color:#465365;font-size:10px;margin-top:18px}
 @media(max-width:800px){.grid{grid-template-columns:1fr}.nav{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:90px 1fr}.rankbox{width:90px;height:90px}.rankbox b{font-size:40px}.grid2{grid-template-columns:1fr}}
+.planning-grid{display:grid;grid-template-columns:repeat(7,minmax(120px,1fr));gap:8px;overflow-x:auto}.day-card{background:#080d14;border:1px solid var(--line);border-radius:12px;padding:10px;min-width:120px}.day-head{font-weight:950;margin-bottom:8px}.day-date{font-size:10px;color:var(--muted)}.plan-item{border:1px solid var(--line);border-radius:9px;padding:8px;margin-bottom:7px;background:#0c131c}.plan-item b{display:block;font-size:12px}.plan-time{font-size:10px;color:var(--blue)}.plan-actions{display:flex;gap:5px;margin-top:6px}.plan-actions button{padding:5px 7px;font-size:10px}.plan-add{width:100%;padding:7px;font-size:11px}@media(max-width:800px){.planning-grid{grid-template-columns:repeat(7,150px)}}
+
+.daily-action{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #17202b}.daily-action:last-child{border-bottom:0}.daily-check{width:20px;height:20px;accent-color:var(--green)}.daily-info{flex:1}.daily-info b{display:block}.daily-info small{color:var(--muted)}.daily-reward{color:var(--gold);font-weight:900;font-size:11px}.daily-done{opacity:.55}.daily-done .daily-name{text-decoration:line-through}.levelup{padding:14px;border:1px solid #5b4b86;background:#171126;border-radius:12px;margin-bottom:10px}.bonus{padding:12px;border:1px solid #665528;background:#17140b;border-radius:12px;margin:10px 0}
 </style>
-
-<meta name="theme-color" content="#070b12">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="THE SYSTEM">
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="icon-180.png">
-
 </head>
 <body>
 <div class="app">
 <header class="top">
-<div><div class="logo">THE SYSTEM</div><div class="tag">REAL LIFE RPG // V2 // BUILD YOURSELF</div></div>
+<div><div class="logo">THE SYSTEM</div><div class="tag">REAL LIFE RPG // V3 // BUILD YOURSELF</div></div>
 <div class="top-actions"><button onclick="manualSave()">SAVE</button><button onclick="resetGame()">RESET</button></div>
 </header>
 
@@ -35,7 +29,7 @@ button,input,select{font:inherit}button{background:#111a25;border:1px solid var(
 <button onclick="page('quests',this)">QUESTS</button>
 <button onclick="page('dungeon',this)">DUNGEON</button>
 <button onclick="page('inventory',this)">INVENTORY</button>
-<button onclick="page('history',this)">HISTORY</button>
+<button onclick="page('planning',this)">PLANNING</button><button onclick="page('daily',this)">DAILY</button><button onclick="page('history',this)">HISTORY</button>
 </nav>
 
 <section id="status" class="page active">
@@ -143,6 +137,8 @@ button,input,select{font:inherit}button{background:#111a25;border:1px solid var(
 </div>
 </section>
 
+<section id="daily" class="page"><section class="card"><div class="row"><div><h2 class="tabs-title">⚡ DAILY ACTIONS</h2><div class="tiny muted">Coche ce que tu as réellement accompli aujourd'hui.</div></div><div class="pill" id="dailyCount">0/0</div></div><div class="notice" style="margin-top:12px">Chaque action validée donne son XP et ses GOLD une seule fois par jour.</div><div class="row" style="margin-bottom:10px"><div><b id="dailyXp">0 XP</b> <span class="muted">gagnés aujourd'hui</span><div class="tiny muted" style="margin-top:4px">🔥 Série : <b id="dailyStreak">0</b> jours • Bonus : <b id="dailyBonus">0 XP</b></div></div><button onclick="addDailyAction()">＋ AJOUTER UNE ACTION</button></div><div id="dailyList"></div></section></section>
+<section id="planning" class="page"><section class="card"><div class="row"><div><h2 class="tabs-title">📅 PLANNING</h2><div class="tiny muted" id="weekLabel"></div></div><div class="top-actions"><button onclick="changeWeek(-1)">←</button><button onclick="goThisWeek()">AUJOURD'HUI</button><button onclick="changeWeek(1)">→</button></div></div><div class="notice" style="margin-top:12px">Planning enregistré automatiquement sur cet appareil.</div><div id="planningGrid" class="planning-grid"></div><div class="row" style="margin-top:12px"><button onclick="copyWeek()">📋 COPIER LA SEMAINE</button><button onclick="clearWeek()">🗑 VIDER</button></div></section></section>
 <section id="history" class="page">
 <div class="grid">
 <section class="card"><h2 class="title">ACTIVITY LOG</h2><div id="log"></div></section>
@@ -150,7 +146,7 @@ button,input,select{font:inherit}button{background:#111a25;border:1px solid var(
 </div>
 </section>
 
-<footer>THE SYSTEM V2 • sauvegarde automatique sur cet appareil • pas de compte requis</footer>
+<footer>THE SYSTEM V3 • sauvegarde automatique sur cet appareil • pas de compte requis</footer>
 </div>
 
 <script>
@@ -174,14 +170,14 @@ function log(x){s.history.unshift(x);s.history=s.history.slice(0,100)}
 function gain(xp,gold,reason,stat){
 s.xp+=xp;s.totalXp+=xp;s.gold+=gold||0;
 if(stat)s.stats[stat]++;
-while(s.xp>=need()){s.xp-=need();s.level++;s.stats.disc++;s.stats.focus++;log('⬆ LEVEL UP → Niveau '+s.level+' // Rank '+rank())}
+while(s.xp>=need()){s.xp-=need();s.level++;s.gold+=50;s.stats.disc++;s.stats.focus++;log('⬆ LEVEL UP → Niveau '+s.level+' // Rank '+rank()+' • +50 GOLD')}
 log(`+${xp} XP${gold?` • +${gold} GOLD`:''} — ${reason}`);save();render()
 }
 function ensureDaily(){
 const today=dayKey();
 if(s.lastDaily!==today){
 s.quests=base.map(q=>({...q,done:false}));
-s.lastDaily=today;save()
+s.lastDaily=today;save();renderPlanning();renderDaily()
 }}
 function complete(i){
 const q=s.quests[i];if(!q||q.done)return;
@@ -201,12 +197,48 @@ function addQuest(){
 let n=document.getElementById('customName').value.trim(),xp=+document.getElementById('customXp').value||25;
 if(!n)return;addSuggested(n,xp,'focus');document.getElementById('customName').value=''
 }
+function dailyLifetime(){
+  const d=loadDaily(), days=d.days||{}, by={}, vals=Object.values(days);
+  let actions=0,xp=0,perfectDays=0,bestStreak=0,streak=0,last=null;
+  for(const day of Object.keys(days).sort()){
+    const ids=Object.keys(days[day]||{}).filter(k=>days[day][k]);
+    actions+=ids.length;
+    for(const id of ids){by[id]=(by[id]||0)+1; const a=(d.actions||[]).find(x=>x.id===id); if(a)xp+=a.xp}
+    const ok=ids.length>0;
+    if(ok){
+      if(last){const a=new Date(last),b=new Date(day); const diff=Math.round((b-a)/86400000); streak=diff===1?streak+1:1}else streak=1;
+      bestStreak=Math.max(bestStreak,streak);
+      const total=(d.actions||[]).length; if(total&&ids.length>=total)perfectDays++;
+    } else streak=0;
+    last=day;
+  }
+  return {actions,xp,by,bestStreak,perfectDays};
+}
+function dailyStreakData(){
+ const d=loadDaily(), days=d.days||{}, keys=Object.keys(days).filter(k=>Object.keys(days[k]||{}).length).sort();
+ if(!keys.length)return {current:0,last:null}; let cur=1;
+ for(let i=keys.length-1;i>0;i--){const a=new Date(keys[i]),b=new Date(keys[i-1]); if(Math.round((a-b)/86400000)===1)cur++; else break}
+ return {current:cur,last:keys[keys.length-1]};
+}
+function claimDailyBonus(type, amount, label){
+ const d=ensureDailyData(),t=dailyToday(); d.bonuses=d.bonuses||{}; if(d.bonuses[t]&&d.bonuses[t][type])return false;
+ d.bonuses[t]=d.bonuses[t]||{}; d.bonuses[t][type]=true; saveDaily(d); gain(amount, type==='perfect'?50:0, label, 'focus'); return true;
+}
 const achievements=[
-['Nouveau départ','Terminer ta première quête',()=>s.totalXp>0],
+['First Step','Terminer ta première action',()=>dailyLifetime().actions>=1],
 ['Survivant','Atteindre le niveau 5',()=>s.level>=5],
+['Bookworm','20 sessions de lecture',()=>dailyLifetime().by.read>=20],
+['Warrior','30 séances de sport',()=>dailyLifetime().by.sport>=30],
+['Student','25 sessions d’apprentissage',()=>dailyLifetime().by.learn>=25],
+['100 Actions','Terminer 100 Daily Actions',()=>dailyLifetime().actions>=100],
+['1000 XP','Gagner 1 000 XP avec les Daily Actions',()=>dailyLifetime().xp>=1000],
+['3-Day Streak','3 jours consécutifs',()=>dailyLifetime().bestStreak>=3],
+['Week Warrior','7 jours consécutifs',()=>dailyLifetime().bestStreak>=7],
+['Month Warrior','30 jours consécutifs',()=>dailyLifetime().bestStreak>=30],
+['Perfect Week','7 jours à 100% des Daily Actions',()=>dailyLifetime().perfectDays>=7],
 ['Cycliste','Cumuler 100 km virtuels',()=>s.claimed.km>=100],
 ['Discipliné','Terminer 5 journées de travail',()=>s.boss>=5],
-['No Excuses','Streak de 7 jours',()=>s.streak>=7],
+['No Excuses','Streak de 7 jours de travail',()=>s.streak>=7],
 ['S-Rank','Atteindre le niveau 51',()=>s.level>=51]
 ];
 function checkTitles(){
@@ -247,20 +279,38 @@ document.getElementById('shop').innerHTML=[
 ].map(x=>`<div class="item"><div><strong>${x[1]} ${x[2]}</strong><small>${x[0]} GOLD</small></div><button class="shopbtn" onclick="buy(${x[0]},'${x[2]}')">CLAIM</button></div>`).join('');
 document.getElementById('log').innerHTML=s.history.length?s.history.map(x=>`<div class="log">${esc(x)}</div>`).join(''):'<div class="empty">Aucune activité.</div>';
 document.getElementById('lifetime').innerHTML=`<div class="item"><div><strong>XP total</strong><small>Depuis la création du personnage</small></div><b>${s.totalXp}</b></div><div class="item"><div><strong>Niveau</strong><small>Rang actuel</small></div><b>${s.level} / ${rank()}</b></div><div class="item"><div><strong>Streak</strong><small>Meilleure série actuelle</small></div><b>${s.streak} 🔥</b></div>`;
-save()
+save();renderDaily()
 }
 function page(id,btn){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
 function manualSave(){save();alert('Progression sauvegardée.')}
 function resetGame(){if(confirm('Effacer toute ta progression ?')){localStorage.removeItem(KEY);location.reload()}}
 function esc(x){return String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 render();checkTitles();render();
-</script>
+const PLAN_KEY='THE_SYSTEM_V3_PLANNING';let planWeekOffset=0;function mondayOf(d){d=new Date(d);d.setHours(12,0,0,0);const day=d.getDay()||7;d.setDate(d.getDate()-day+1);return d}function dateKey(d){return d.toISOString().slice(0,10)}function weekKey(o=0){const d=mondayOf(new Date());d.setDate(d.getDate()+o*7);return dateKey(d)}function loadPlans(){return JSON.parse(localStorage.getItem(PLAN_KEY)||'{}')}function savePlans(p){localStorage.setItem(PLAN_KEY,JSON.stringify(p))}function changeWeek(n){planWeekOffset+=n;renderPlanning()}function goThisWeek(){planWeekOffset=0;renderPlanning()}function addPlan(day){const title=prompt('Activité :');if(!title||!title.trim())return;const time=prompt('Heure (ex. 18:00) :','');const p=loadPlans(),wk=weekKey(planWeekOffset);p[wk]=p[wk]||Array.from({length:7},()=>[]);p[wk][day].push({title:title.trim(),time:(time||'').trim()});savePlans(p);renderPlanning()}function editPlan(day,i){const p=loadPlans(),wk=weekKey(planWeekOffset),x=p[wk]?.[day]?.[i];if(!x)return;const title=prompt('Modifier :',x.title);if(title===null)return;const time=prompt('Heure :',x.time||'');x.title=title.trim();x.time=(time||'').trim();savePlans(p);renderPlanning()}function deletePlan(day,i){const p=loadPlans(),wk=weekKey(planWeekOffset);if(!p[wk]?.[day])return;p[wk][day].splice(i,1);savePlans(p);renderPlanning()}function copyWeek(){const p=loadPlans(),from=weekKey(planWeekOffset),to=weekKey(planWeekOffset+1);if(!p[from]){alert('Cette semaine est vide.');return}p[to]=p[from].map(d=>d.map(x=>({...x})));savePlans(p);alert('Semaine copiée.');renderPlanning()}function clearWeek(){if(!confirm('Vider cette semaine ?'))return;const p=loadPlans();delete p[weekKey(planWeekOffset)];savePlans(p);renderPlanning()}function renderPlanning(){const g=document.getElementById('planningGrid');if(!g)return;const start=mondayOf(new Date());start.setDate(start.getDate()+planWeekOffset*7);const p=loadPlans(),wk=weekKey(planWeekOffset),days=p[wk]||Array.from({length:7},()=>[]),names=['LUN','MAR','MER','JEU','VEN','SAM','DIM'],end=new Date(start);end.setDate(end.getDate()+6);document.getElementById('weekLabel').textContent=`Semaine du ${start.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})} au ${end.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit',year:'numeric'})}`;g.innerHTML=names.map((n,i)=>{const d=new Date(start);d.setDate(d.getDate()+i);return `<div class="day-card"><div class="day-head">${n}<div class="day-date">${d.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})}</div></div>${(days[i]||[]).map((x,j)=>`<div class="plan-item"><b>${esc(x.title)}</b>${x.time?`<div class="plan-time">⏰ ${esc(x.time)}</div>`:''}<div class="plan-actions"><button onclick="editPlan(${i},${j})">✎</button><button onclick="deletePlan(${i},${j})">✕</button></div></div>`).join('')}<button class="plan-add" onclick="addPlan(${i})">+ AJOUTER</button></div>`}).join('')}
 
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+const DAILY_KEY='THE_SYSTEM_V3_DAILY';
+const DEFAULT_DAILY=[{id:'read',name:'Lire 20 minutes',xp:30,gold:5},{id:'sport',name:'Faire du sport',xp:50,gold:10},{id:'walk',name:'Marcher 30 minutes',xp:30,gold:5},{id:'learn',name:'Apprendre quelque chose',xp:40,gold:8},{id:'clean',name:'Ranger / nettoyer',xp:25,gold:5},{id:'journal',name:'Écrire dans son journal',xp:20,gold:3},{id:'creative',name:'Faire une activité créative',xp:30,gold:5},{id:'sleep',name:'Bien dormir',xp:30,gold:5}];
+function dailyToday(){return new Date().toLocaleDateString('fr-CA')}function loadDaily(){return JSON.parse(localStorage.getItem(DAILY_KEY)||'{}')}function saveDaily(d){localStorage.setItem(DAILY_KEY,JSON.stringify(d))}function ensureDailyData(){const d=loadDaily(),t=dailyToday();if(!d.actions)d.actions=DEFAULT_DAILY.map(x=>({...x}));if(!d.days)d.days={};if(!d.days[t])d.days[t]={};saveDaily(d);return d}
+function addDailyAction(){const name=prompt('Nom de l’action :');if(!name||!name.trim())return;let xp=parseInt(prompt('XP gagné :','30'),10),gold=parseInt(prompt('GOLD gagné :','5'),10);if(!Number.isFinite(xp)||xp<0)xp=30;if(!Number.isFinite(gold)||gold<0)gold=5;const d=ensureDailyData();d.actions.push({id:'custom_'+Date.now(),name:name.trim(),xp,gold});saveDaily(d);renderDaily()}
+function toggleDaily(id){
+ const d=ensureDailyData(),t=dailyToday(); d.days[t]=d.days[t]||{};
+ if(d.days[t][id])return; const a=d.actions.find(x=>x.id===id); if(!a)return;
+ d.days[t][id]=true; saveDaily(d);
+ gain(a.xp,a.gold,'Daily Action — '+a.name,'disc');
+ const count=Object.keys(d.days[t]).filter(k=>d.days[t][k]).length;
+ const streak=dailyStreakData().current;
+ const bonuses=d.bonuses?.[t]||{};
+ if(count===3 && !bonuses.three){bonuses.three=true;d.bonuses[t]=bonuses;saveDaily(d);gain(20,0,'🎯 DAILY BONUS — 3 actions','focus');}
+ if(count===5 && !bonuses.five){bonuses.five=true;d.bonuses[t]=bonuses;saveDaily(d);gain(50,0,'🔥 DAILY BONUS — 5 actions','focus');}
+ if(count===d.actions.length && !bonuses.perfect){bonuses.perfect=true;d.bonuses[t]=bonuses;saveDaily(d);gain(100,50,'👑 PERFECT DAY — toutes les actions','focus');}
+ if(streak===3 && !bonuses.s3){bonuses.s3=true;d.bonuses[t]=bonuses;saveDaily(d);gain(25,0,'🔥 STREAK BONUS — 3 jours','focus');}
+ if(streak===7 && !bonuses.s7){bonuses.s7=true;d.bonuses[t]=bonuses;saveDaily(d);gain(100,0,'🔥 STREAK BONUS — 7 jours','focus');}
+ if(streak===14 && !bonuses.s14){bonuses.s14=true;d.bonuses[t]=bonuses;saveDaily(d);gain(250,0,'🔥 STREAK BONUS — 14 jours','focus');}
+ if(streak===30 && !bonuses.s30){bonuses.s30=true;d.bonuses[t]=bonuses;saveDaily(d);gain(500,0,'🔥 STREAK BONUS — 30 jours','focus');}
+ renderDaily(); checkTitles(); render();
 }
+function deleteDaily(id){const d=ensureDailyData();if(!String(id).startsWith('custom_'))return;d.actions=d.actions.filter(x=>x.id!==id);saveDaily(d);renderDaily()}
+function renderDaily(){const list=document.getElementById('dailyList');if(!list)return;const d=ensureDailyData(),t=dailyToday(),done=d.days[t]||{},count=d.actions.filter(x=>done[x.id]).length;let xp=0;d.actions.forEach(x=>{if(done[x.id])xp+=x.xp});const life=dailyLifetime(),st=dailyStreakData(),bonus=(d.bonuses?.[t]||{});let bx=0;if(bonus.three)bx+=20;if(bonus.five)bx+=50;if(bonus.perfect)bx+=100;document.getElementById('dailyCount').textContent=`${count}/${d.actions.length}`;document.getElementById('dailyXp').textContent=`${xp} XP`;document.getElementById('dailyStreak').textContent=st.current;document.getElementById('dailyBonus').textContent=bx;list.innerHTML=d.actions.map(a=>{const c=!!done[a.id];return `<div class="daily-action ${c?'daily-done':''}"><input class="daily-check" type="checkbox" ${c?'checked disabled':''} onchange="toggleDaily('${esc(a.id)}')"><div class="daily-info"><b class="daily-name">${esc(a.name)}</b><small>+${a.xp} XP • +${a.gold} GOLD</small></div>${String(a.id).startsWith('custom_')&&!c?`<button onclick="deleteDaily('${esc(a.id)}')">✕</button>`:''}<div class="daily-reward">${c?'✓ FAIT':'À FAIRE'}</div></div>`}).join('')}
 </script>
-
 </body>
 </html>
