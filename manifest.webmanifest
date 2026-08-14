@@ -1,1 +1,9 @@
-{"name":"THE SYSTEM V3","short_name":"THE SYSTEM","start_url":"./","display":"standalone","background_color":"#05070a","theme_color":"#05070a"}
+{
+  "name":"THE SYSTEM V4",
+  "short_name":"THE SYSTEM",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#05070a",
+  "theme_color":"#05070a",
+  "orientation":"portrait"
+}
