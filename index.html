@@ -70,4 +70,25 @@ function renderInventory(){document.getElementById('equipment').innerHTML=state.
 function buy(cost,name){if(state.gold<cost)return toast('Pas assez de GOLD');state.gold-=cost;log(`🎁 Récompense réclamée — ${name}`);save();render();toast('Récompense réclamée')}
 function renderHistory(){document.getElementById('log').innerHTML=state.history.length?state.history.map(x=>`<div class="transaction"><span>${esc(x)}</span></div>`).join(''):'<div class="empty">Aucune activité.</div>';document.getElementById('lifetime').innerHTML=`<div class="item"><div><strong>XP total</strong><small>Progression globale</small></div><b>${state.totalXp}</b></div><div class="item"><div><strong>Niveau</strong><small>Rang ${rank()}</small></div><b>${state.level}</b></div><div class="item"><div><strong>Streak</strong><small>Daily Actions</small></div><b>🔥 ${currentStreak()}</b></div><div class="item"><div><strong>Actions</strong><small>Daily lifetime</small></div><b>${dailyLifetime().actions}</b></div>`}
 render();checkAchievements();
-</script></body></html>
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js?v=4.1')
+      .then(reg => {
+        if (reg.waiting) reg.waiting.postMessage({type:'SKIP_WAITING'});
+        reg.addEventListener('updatefound', () => {
+          const worker = reg.installing;
+          if (worker) worker.addEventListener('statechange', () => {
+            if (worker.state === 'installed' && navigator.serviceWorker.controller) {
+              worker.postMessage({type:'SKIP_WAITING'});
+            }
+          });
+        });
+      })
+      .catch(() => {});
+  });
+}
+</script>
+
+</body></html>
