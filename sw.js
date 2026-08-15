@@ -1,4 +1,4 @@
-const CACHE='THE_SYSTEM_V6_20260815';
+const CACHE='THE_SYSTEM_V7_20260815';
 const ASSETS=['./','./index.html'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
