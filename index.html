@@ -7,13 +7,52 @@
 :root{--bg:#05070a;--panel:#0b1017;--panel2:#101824;--line:#243143;--txt:#edf4ff;--muted:#8190a5;--blue:#6ca7ff;--violet:#9d73ff;--green:#52d98a;--red:#ff6478;--gold:#f4ca63;--cyan:#59d8ff}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 50% -15%,#1a2b46 0,#070a0f 42%,#030406 100%);color:var(--txt);font:14px Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{background:#111a25;border:1px solid var(--line);color:var(--txt);border-radius:10px;padding:10px 13px;font-weight:850;cursor:pointer;transition:.2s}button:hover{transform:translateY(-1px);border-color:#587eaf;background:#172231}.app{max-width:1180px;margin:auto;padding:18px 14px 50px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.brand{font-size:23px;font-weight:1000;letter-spacing:4px}.tag{font-size:9px;color:var(--muted);letter-spacing:2px;margin-top:4px}.top-actions{display:flex;gap:7px}.menuBtn{font-size:20px;padding:8px 12px}.drawer{position:fixed;z-index:50;left:12px;top:12px;width:min(320px,calc(100vw - 24px));background:rgba(8,12,18,.97);border:1px solid #31435a;border-radius:18px;padding:14px;box-shadow:0 25px 80px #000b;backdrop-filter:blur(14px);transform:translateX(-115%);transition:.28s}.drawer.open{transform:translateX(0)}.drawerHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.drawer button{width:100%;text-align:left;margin:4px 0}.navIcon{width:30px;display:inline-block}.page{display:none}.page.active{display:block}.grid{display:grid;grid-template-columns:1.35fr .65fr;gap:14px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:linear-gradient(145deg,rgba(15,22,31,.96),rgba(6,9,14,.96));border:1px solid var(--line);border-radius:17px;padding:16px;box-shadow:0 18px 50px #0007}.hero{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center}.rankbox{width:120px;height:120px;border-radius:18px;display:grid;place-items:center;background:#08101a;border:1px solid #3c536f;box-shadow:inset 0 0 35px #518eff16}.rankbox b{font-size:54px}.level{font-size:30px;font-weight:1000}.muted{color:var(--muted)}.tiny{font-size:11px}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.bar{height:11px;background:#05080d;border:1px solid var(--line);border-radius:30px;overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--violet));transition:.5s}.title{font-size:12px;letter-spacing:2px;color:#b6c4d7;margin:0 0 12px}.stat{background:#080d14;border:1px solid var(--line);border-radius:12px;padding:12px}.stat b{display:block;font-size:24px;margin-top:4px}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:#142238;color:#a9c9ff;font-size:10px;font-weight:900}.quest{display:flex;gap:10px;align-items:center;padding:13px 0;border-bottom:1px solid #17202b}.quest:last-child{border-bottom:0}.quest input{width:20px;height:20px;accent-color:var(--green)}.qbody{flex:1}.qname{font-weight:900}.qmeta{font-size:10px;color:var(--muted);margin-top:3px}.qxp{color:var(--gold);font-weight:950}.quest.done{opacity:.48}.quest.done .qname{text-decoration:line-through}.notice{padding:12px;border:1px solid #26364b;background:#0b121c;border-radius:11px;color:#b6c5d8;margin:10px 0}.form{display:grid;grid-template-columns:1fr 100px 100px;gap:7px}.form input,.form select{background:#070b11;color:#fff;border:1px solid var(--line);padding:10px;border-radius:9px;outline:0}.item{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px;border:1px solid var(--line);background:#080d14;border-radius:11px;margin-bottom:8px}.item strong{display:block}.item small{color:var(--muted)}.daily-action{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #17202b}.daily-action:last-child{border-bottom:0}.daily-check{width:20px;height:20px;accent-color:var(--green)}.daily-info{flex:1}.daily-info b{display:block}.daily-info small{color:var(--muted)}.daily-done{opacity:.5}.daily-done .daily-name{text-decoration:line-through}.planning-grid{display:grid;grid-template-columns:repeat(7,minmax(130px,1fr));gap:8px;overflow-x:auto}.day-card{background:#080d14;border:1px solid var(--line);border-radius:12px;padding:10px;min-width:130px}.day-head{font-weight:950;margin-bottom:8px}.day-date{font-size:10px;color:var(--muted)}.plan-item{border:1px solid var(--line);border-radius:9px;padding:8px;margin-bottom:7px;background:#0c131c}.plan-item b{display:block;font-size:12px}.plan-time{font-size:10px;color:var(--blue)}.plan-actions{display:flex;gap:5px;margin-top:6px}.plan-actions button{padding:5px 7px;font-size:10px}.plan-add{width:100%;padding:7px;font-size:11px}.money{font-size:36px;font-weight:1000}.money.positive{color:var(--green)}.money.negative{color:var(--red)}.budgetbar{height:12px}.budgetfill{background:linear-gradient(90deg,var(--green),var(--gold),var(--red))}.finance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.transaction{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #18212d}.tx-plus{color:var(--green)}.tx-minus{color:var(--red)}.goal{padding:12px;border:1px solid var(--line);border-radius:12px;background:#080d14;margin-bottom:9px}.goalbar{margin:8px 0}.advice{border-color:#35516a;background:linear-gradient(145deg,#0b1824,#080d14)}.achievement{padding:12px;border:1px solid var(--line);border-radius:11px;background:#080d14;margin-bottom:8px}.achievement.locked{opacity:.4}.toast{position:fixed;z-index:100;left:50%;bottom:24px;transform:translate(-50%,120px);background:#0b1119;border:1px solid #3c536f;border-radius:14px;padding:13px 18px;box-shadow:0 20px 60px #000b;transition:.3s;max-width:90vw;text-align:center}.toast.show{transform:translate(-50%,0)}.modal{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;background:#000a;padding:18px}.modal.open{display:flex}.modalBox{width:min(520px,100%);background:#0a1018;border:1px solid #354960;border-radius:18px;padding:18px;box-shadow:0 30px 90px #000d}.levelup{animation:levelIn .7s ease both;border-color:#765ed0;background:radial-gradient(circle,#231a43,#0b0d14)}.levelup h2{font-size:34px;margin:5px 0}.flash{animation:flash .7s ease}.complete{animation:complete .55s ease}.pulse{animation:pulse 1.4s infinite}.soundRow{display:flex;align-items:center;justify-content:space-between;gap:10px}.range{width:150px}.empty{text-align:center;padding:22px;color:var(--muted)}footer{text-align:center;color:#465365;font-size:10px;margin-top:18px}
 @keyframes levelIn{0%{opacity:0;transform:scale(.75);filter:blur(8px)}60%{opacity:1;transform:scale(1.04)}100%{transform:scale(1)}}@keyframes flash{0%{box-shadow:0 0 0 #6ca7ff00}50%{box-shadow:0 0 45px #6ca7ff77}100%{box-shadow:none}}@keyframes complete{0%{transform:scale(1)}45%{transform:scale(1.03);box-shadow:0 0 35px #52d98a55}100%{transform:scale(1)}}@keyframes pulse{50%{box-shadow:0 0 30px #f4ca6333}}
-@media(max-width:800px){.app{padding:12px 10px 40px}.grid{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.hero{grid-template-columns:88px 1fr}.rankbox{width:88px;height:88px}.rankbox b{font-size:40px}.finance-grid{grid-template-columns:1fr 1fr}.form{grid-template-columns:1fr 90px}.form button{grid-column:span 2}.brand{font-size:19px}.top{align-items:flex-start}.planning-grid{grid-template-columns:repeat(7,150px)}}
+
+.system-panel{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(9,18,31,.98),rgba(3,7,13,.98));border:1px solid #405a78;border-radius:2px;box-shadow:inset 0 0 55px rgba(65,139,220,.07),0 22px 70px #0009}
+.system-panel:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(transparent 96%,rgba(100,170,255,.08) 97%,transparent 98%);background-size:100% 7px;opacity:.35}
+.system-panel>*{position:relative}
+.system-header{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;border-bottom:1px solid #304965;color:#bcdcff;letter-spacing:2px;font-size:11px;font-weight:950}
+.system-corner{color:#69b8ff;font-size:10px}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.rpg-stat{padding:11px;background:rgba(7,14,23,.86);border:1px solid #263b54;min-height:82px}
+.rpg-stat .stat-code{font-size:10px;color:#8da9c7;letter-spacing:2px}
+.rpg-stat b{display:block;font-size:25px;margin-top:3px;color:#e9f4ff}
+.rpg-stat small{color:#6f8cae}
+.stat-meter{height:5px;background:#050a10;margin-top:8px;overflow:hidden}
+.stat-meter i{display:block;height:100%;background:linear-gradient(90deg,#4c9fff,#b77cff)}
+.evo-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.evo-card{padding:11px;background:#080f18;border:1px solid #263b54}
+.evo-card b{font-size:17px}
+.evo-delta{color:#59d8ff;font-weight:900;font-size:11px}
+.performance-form{display:grid;grid-template-columns:1fr 100px 110px;gap:7px}
+.performance-form input,.performance-form select{background:#050a10;color:#fff;border:1px solid #263b54;padding:10px;border-radius:2px}
+.quest-difficulty{display:inline-block;margin-left:6px;color:#f4ca63;font-size:9px;letter-spacing:1px}
+.save-badge{font-size:9px;color:#66e0a0;letter-spacing:1px}
+@media(max-width:800px){.app{padding:12px 10px 40px}.grid{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.hero{grid-template-columns:88px 1fr}.rankbox{width:88px;height:88px}.rankbox b{font-size:40px}.finance-grid{grid-template-columns:1fr 1fr}.form{grid-template-columns:1fr 90px}.form button{grid-column:span 2}.performance-form{grid-template-columns:1fr 90px}.performance-form button{grid-column:span 2}.stat-grid{grid-template-columns:repeat(2,1fr)}.brand{font-size:19px}.top{align-items:flex-start}.planning-grid{grid-template-columns:repeat(7,150px)}}
 </style></head>
 <body>
 <div class="drawer" id="drawer"><div class="drawerHead"><b>☰ SYSTEM MENU</b><button onclick="toggleMenu()">✕</button></div>
 <button onclick="go('status')"><span class="navIcon">⚔️</span>STATUS</button><button onclick="go('quests')"><span class="navIcon">🎯</span>QUÊTES</button><button onclick="go('planning')"><span class="navIcon">📅</span>PLANNING</button><button onclick="go('daily')"><span class="navIcon">⚡</span>DAILY ACTIONS</button><button onclick="go('finance')"><span class="navIcon">💰</span>FINANCES</button><button onclick="go('achievements')"><span class="navIcon">🏆</span>ACHIEVEMENTS</button><button onclick="go('inventory')"><span class="navIcon">🎒</span>INVENTAIRE</button><button onclick="go('history')"><span class="navIcon">📜</span>HISTORIQUE</button><button onclick="go('settings')"><span class="navIcon">⚙️</span>PARAMÈTRES</button></div>
-<div class="app"><header class="top"><div class="row"><button class="menuBtn" onclick="toggleMenu()">☰</button><div><div class="brand">THE SYSTEM</div><div class="tag">REAL LIFE RPG // V4 // BUILD YOURSELF</div></div></div><div class="top-actions"><button onclick="sound('click')">🔊</button></div></header>
+<div class="app"><header class="top"><div class="row"><button class="menuBtn" onclick="toggleMenu()">☰</button><div><div class="brand">THE SYSTEM</div><div class="tag">REAL LIFE RPG // V5 // EVOLVE YOURSELF</div></div></div><div class="top-actions"><button onclick="sound('click')">🔊</button></div></header>
 <section id="status" class="page active"><div class="grid"><div><section class="card hero" id="heroCard"><div class="rankbox"><div><div class="tiny muted" style="text-align:center">RANK</div><b id="rank">E</b></div></div><div><div class="tiny muted">PLAYER</div><div class="level">Niveau <span id="level">1</span></div><div class="row tiny muted"><span id="xpText"></span><span>🪙 <b id="goldText"></b></span></div><div class="bar" style="margin:9px 0"><div id="xpFill" class="fill"></div></div><div class="tiny muted">XP total : <b id="totalXp"></b> • 🔥 <b id="streak"></b> jours</div></div></section>
+<section class="system-panel" style="margin-top:14px">
+<div class="system-header"><span>STATUS // PHYSICAL EVOLUTION</span><span class="save-badge">● SAVE ONLINE LOCAL</span></div>
+<div style="padding:14px">
+<div class="stat-grid" id="physicalStats"></div>
+</div>
+</section>
+<section class="card" style="margin-top:14px">
+<div class="row"><div><h2 class="title">🧬 ÉVOLUTION RÉELLE</h2><div class="tiny muted">Le SYSTEM suit tes performances réelles. Pas de magie : tu progresses en enregistrant ce que tu accomplis.</div></div><button onclick="setBaseline()">BASELINE</button></div>
+<div class="evo-grid" id="physicalEvolution" style="margin-top:10px"></div>
+</section>
+<section class="card" style="margin-top:14px">
+<div class="row"><div><h2 class="title">⚔️ TRAINING INPUT</h2><div class="tiny muted">Coche/valide ce que tu as réellement fait pour mettre à jour ton STATUS.</div></div><span class="pill" id="adaptiveTarget"></span></div>
+<div class="performance-form" style="margin-top:10px">
+<select id="perfType"><option value="pushups">Pompes — reps</option><option value="pullups">Tractions — reps</option><option value="squats">Squats — reps</option><option value="runKm">Course — km</option><option value="plankSec">Gainage — secondes</option><option value="learningMinutes">Apprentissage — minutes</option><option value="discipline">Action discipline</option><option value="agility">Session agilité</option></select>
+<input id="perfAmount" type="number" min="1" step="0.1" placeholder="Valeur">
+<button onclick="recordPerformance(document.getElementById('perfType').value,document.getElementById('perfAmount').value)">✓ ENREGISTRER</button>
+</div>
+</section>
 <section class="card" style="margin-top:14px"><h2 class="title">TODAY</h2><div class="grid2"><div class="stat"><span class="muted">Daily progress</span><b id="todayProgress">0/0</b></div><div class="stat"><span class="muted">XP aujourd'hui</span><b id="todayXp">0</b></div></div><div class="bar" style="margin-top:10px"><div id="todayFill" class="fill"></div></div><div class="row" style="margin-top:12px"><button onclick="go('daily')">⚡ DAILY</button><button onclick="go('quests')">🎯 QUÊTES</button><button onclick="go('finance')">💰 FINANCES</button></div></section>
 <section class="card" style="margin-top:14px"><h2 class="title">ACTIVE QUESTS</h2><div id="homeQuests"></div></section></div><aside><section class="card"><h2 class="title">💰 FINANCIAL STATUS</h2><div class="money" id="homeMoney">0 €</div><div class="tiny muted">reste réellement disponible</div><div class="bar budgetbar" style="margin-top:10px"><div id="homeBudgetFill" class="fill budgetfill"></div></div><button style="margin-top:10px;width:100%" onclick="go('finance')">OUVRIR FINANCES</button></section><section class="card" style="margin-top:14px"><h2 class="title">SYSTEM ALERT</h2><div id="systemAlert" class="notice">Initialisation...</div></section></aside></div></section>
 <section id="quests" class="page"><div class="grid"><section class="card"><div class="row"><div><h2 class="tabs-title">🎯 QUÊTES</h2><div class="tiny muted">Objectifs du jour. Termine-les pour gagner XP et GOLD.</div></div><span class="pill" id="qcount">0/0</span></div><div id="questList" style="margin-top:8px"></div><div class="form" style="margin-top:12px"><input id="customName" placeholder="Nouvelle quête"><input id="customXp" type="number" min="1" value="25"><button onclick="addQuest()">ADD</button></div></section><aside class="card"><h2 class="title">QUÊTES RAPIDES</h2><button onclick="addQuestPreset('Sport',50,10,'end')">🏋️ SPORT +50</button><button onclick="addQuestPreset('Lire 20 minutes',30,5,'focus')">📚 LIRE +30</button><button onclick="addQuestPreset('Journée de travail',100,30,'disc')">💼 TRAVAIL +100</button><button onclick="addQuestPreset('Ranger',25,5,'disc')">🧹 RANGER +25</button></aside></div></section>
@@ -24,22 +63,138 @@
 <section id="inventory" class="page"><div class="grid"><section class="card"><h2 class="title">🎒 INVENTAIRE</h2><div id="equipment"></div></section><aside class="card"><h2 class="title">🪙 REWARD SHOP</h2><div class="tiny muted">Dépense tes GOLD comme récompenses personnelles.</div><div id="shop" style="margin-top:10px"></div></aside></div></section>
 <section id="history" class="page"><div class="grid"><section class="card"><h2 class="title">📜 ACTIVITY LOG</h2><div id="log"></div></section><aside class="card"><h2 class="title">LIFETIME</h2><div id="lifetime"></div></aside></div></section>
 <section id="settings" class="page"><section class="card"><h2 class="title">⚙️ PARAMÈTRES</h2><div class="soundRow item"><div><strong>🔊 Sons RPG</strong><small>Effets originaux pour actions, quêtes et level up.</small></div><input id="soundToggle" type="checkbox" onchange="setSound(this.checked)"></div><div class="item"><div><strong>Volume</strong><small>Volume des effets sonores.</small></div><input id="volume" class="range" type="range" min="0" max="1" step="0.05" oninput="state.settings.volume=+this.value;save()"></div><button onclick="exportData()">💾 EXPORTER MES DONNÉES</button> <button onclick="importData()">📥 IMPORTER</button> <button onclick="resetAll()">⚠️ RESET COMPLET</button></section></section>
-<footer>THE SYSTEM V4 • sauvegarde locale • aucun compte requis</footer></div>
+<footer>THE SYSTEM V5 • sauvegarde locale • aucun compte requis</footer></div>
 <div class="toast" id="toast"></div><div class="modal" id="modal"><div class="modalBox" id="modalBox"></div></div>
 <script>
-const KEY='THE_SYSTEM_V4';const PLAN_KEY='THE_SYSTEM_V4_PLAN';const DAILY_KEY='THE_SYSTEM_V4_DAILY';
+const KEY='THE_SYSTEM_PLAYER_SAVE';
+const PLAN_KEY='THE_SYSTEM_PLAYER_PLAN';
+const DAILY_KEY='THE_SYSTEM_PLAYER_DAILY';
+const SAVE_SCHEMA=2;
 const defaultsDaily=[['read','Lire 20 minutes',30,5],['sport','Faire du sport',50,10],['walk','Marcher 30 minutes',30,5],['learn','Apprendre quelque chose',40,8],['clean','Ranger / nettoyer',25,5],['journal','Écrire dans son journal',20,3],['creative','Activité créative',30,5],['sleep','Bien dormir',30,5]];
-const baseQuests=[['work','Journée de travail terminée',100,30,'disc'],['sportq','Faire du sport',50,10,'end'],['readq','Lire 20 minutes',30,5,'focus']];
+const baseQuests=[['work','Journée de travail terminée',100,30,'disc'],['sportq','Entraînement adaptatif',70,12,'str'],['readq','Lire 20 minutes',30,5,'int']];
+
+function readLegacyState(){
+  const candidates=['THE_SYSTEM_V4','THE_SYSTEM_V3','THE_SYSTEM_V2'];
+  for(const k of candidates){
+    try{const x=JSON.parse(localStorage.getItem(k)||'null');if(x)return x}catch(e){}
+  }
+  return null;
+}
 let state=JSON.parse(localStorage.getItem(KEY)||'null');
-if(!state){let old=JSON.parse(localStorage.getItem('THE_SYSTEM_V2')||'null');state=old?{level:old.level||1,xp:old.xp||0,totalXp:old.totalXp||0,gold:old.gold||0,streak:old.streak||0,quests:[],history:old.history||[],titles:old.titles||[],equipment:old.equipment||['Chaussures du Débutant'],dailyStreak:0,lastActive:null,boss:old.boss||0,claimed:{},finance:{balance:0,savings:0,transactions:[],goals:[]},settings:{sound:true,volume:.45}}: {level:1,xp:0,totalXp:0,gold:0,streak:0,quests:[],history:[],titles:[],equipment:['Chaussures du Débutant'],dailyStreak:0,lastActive:null,boss:0,claimed:{},finance:{balance:0,savings:0,transactions:[],goals:[]},settings:{sound:true,volume:.45}};save()}
-state.finance=state.finance||{balance:0,savings:0,transactions:[],goals:[]};state.settings=state.settings||{sound:true,volume:.45};state.quests=state.quests||[];state.claimed=state.claimed||{};state.titles=state.titles||[];state.equipment=state.equipment||['Chaussures du Débutant'];
+if(!state){
+  const old=readLegacyState();
+  state=old?{
+    ...old,
+    schemaVersion:SAVE_SCHEMA,
+    migratedFrom:old.schemaVersion||'legacy',
+  }:{
+    schemaVersion:SAVE_SCHEMA,level:1,xp:0,totalXp:0,gold:0,streak:0,quests:[],history:[],titles:[],
+    equipment:['Chaussures du Débutant'],dailyStreak:0,lastActive:null,boss:0,claimed:{},
+    finance:{balance:0,savings:0,transactions:[],goals:[]},settings:{sound:true,volume:.45}
+  };
+}
+function normalizeState(){
+  state.schemaVersion=SAVE_SCHEMA;
+  state.finance=state.finance||{balance:0,savings:0,transactions:[],goals:[]};
+  state.settings=state.settings||{sound:true,volume:.45};
+  state.quests=state.quests||[];state.claimed=state.claimed||{};
+  state.titles=state.titles||[];state.equipment=state.equipment||['Chaussures du Débutant'];
+  state.history=state.history||[];state.level=state.level||1;state.xp=state.xp||0;state.totalXp=state.totalXp||0;state.gold=state.gold||0;
+  state.physical=state.physical||{};
+  const p=state.physical;
+  p.baseline=p.baseline||{pushups:10,pullups:3,squats:20,runKm:0,plankSec:30};
+  p.current=p.current||{pushups:p.baseline.pushups,pullups:p.baseline.pullups,squats:p.baseline.squats,runKm:p.baseline.runKm,plankSec:p.baseline.plankSec};
+  p.best=p.best||{pushups:p.current.pushups,pullups:p.current.pullups,squats:p.current.squats,runKm:p.current.runKm,plankSec:p.current.plankSec};
+  p.sessions=p.sessions||[];p.learningMinutes=p.learningMinutes||0;p.disciplineActions=p.disciplineActions||0;
+  p.agilitySessions=p.agilitySessions||0;
+}
+normalizeState();
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+save();
+if(!localStorage.getItem('THE_SYSTEM_PLAYER_QUEST_DAY')){
+  const qd=localStorage.getItem('THE_SYSTEM_V4_QUEST_DAY');
+  if(qd)localStorage.setItem('THE_SYSTEM_PLAYER_QUEST_DAY',qd);
+}
+if(!localStorage.getItem(DAILY_KEY)){
+  const d4=localStorage.getItem('THE_SYSTEM_V4_DAILY');if(d4)localStorage.setItem(DAILY_KEY,d4);
+}
+if(!localStorage.getItem(PLAN_KEY)){
+  const p4=localStorage.getItem('THE_SYSTEM_V4_PLAN');if(p4)localStorage.setItem(PLAN_KEY,p4);
+}
+function today(){return new Date().toLocaleDateString('fr-CA')}
+function esc(x){return String(x??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]))}
+function need(){return 100+(state.level-1)*60}
+function rank(){return state.level>=51?'S':state.level>=41?'A':state.level>=31?'B':state.level>=21?'C':state.level>=11?'D':'E'}
 function save(){localStorage.setItem(KEY,JSON.stringify(state))}function today(){return new Date().toLocaleDateString('fr-CA')}function esc(x){return String(x??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[m]))}function need(){return 100+(state.level-1)*60}function rank(){return state.level>=51?'S':state.level>=41?'A':state.level>=31?'B':state.level>=21?'C':state.level>=11?'D':'E'}
 function toast(t){let e=document.getElementById('toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2600)}
 let audioCtx;function sound(type){if(!state.settings.sound)return;try{audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();let o=audioCtx.createOscillator(),g=audioCtx.createGain(),f={click:440,complete:660,level:880,achievement:990,boss:520}[type]||440;o.frequency.value=f;o.type=type==='level'?'sine':'triangle';g.gain.setValueAtTime(0.0001,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(.08*state.settings.volume,audioCtx.currentTime+.02);g.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+(type==='level'?.55:.18));o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+(type==='level'?.6:.22));if(type==='level'){setTimeout(()=>sound('achievement'),160)}}catch(e){}}
+
+function physicalStatScore(){
+  const p=state.physical, c=p.current;
+  const str=Math.min(100,Math.round((c.pushups/40)*65+(c.pullups/15)*35));
+  const end=Math.min(100,Math.round((c.runKm/8)*70+(c.plankSec/180)*30));
+  const agi=Math.min(100,Math.round(Math.min(100,p.agilitySessions*3)));
+  const vit=Math.min(100,Math.round((c.squats/100)*60+(c.runKm/8)*40));
+  const int=Math.min(100,Math.round(p.learningMinutes/12));
+  const disc=Math.min(100,Math.round((p.disciplineActions/50)*100));
+  return {str,end,agi,vit,int,disc};
+}
+function pctEvolution(key){
+  const b=+state.physical.baseline[key]||0,c=+state.physical.current[key]||0;
+  if(b<=0)return c>0?100:0;
+  return Math.round((c-b)/b*100);
+}
+function adaptiveTraining(){
+  const c=state.physical.current;
+  const push=Math.max(5,Math.round(c.pushups*1.12));
+  const squats=Math.max(15,Math.round(c.squats*1.12));
+  const plank=Math.max(30,Math.round(c.plankSec*1.10));
+  return {push,squats,plank};
+}
+function recordPerformance(type,amount){
+  amount=+amount||0;if(amount<=0)return toast('Valeur invalide');
+  const p=state.physical,c=p.current,b=p.best;
+  const labels={pushups:'Pompes',pullups:'Tractions',squats:'Squats',runKm:'Course (km)',plankSec:'Gainage (sec)',learningMinutes:'Apprentissage (min)',discipline:'Discipline',agility:'Agilité'};
+  if(type==='learningMinutes'){p.learningMinutes+=amount;p.sessions.push({date:today(),type,amount});gain(Math.max(10,Math.round(amount*.8)),0,`${labels[type]} — ${amount} min`)}
+  else if(type==='discipline'){p.disciplineActions+=Math.round(amount);p.sessions.push({date:today(),type,amount});gain(20*Math.round(amount),0,labels[type])}
+  else if(type==='agility'){p.agilitySessions+=Math.round(amount);p.sessions.push({date:today(),type,amount});gain(15*Math.round(amount),0,labels[type])}
+  else{
+    c[type]=Math.max(c[type]||0,amount);
+    b[type]=Math.max(b[type]||0,amount);
+    p.sessions.push({date:today(),type,amount});
+    const xp=Math.max(10,Math.round(amount*(type==='runKm'?18:type==='plankSec'?.25:1.2)));
+    gain(xp,0,`${labels[type]} — ${amount}${type==='runKm'?' km':type==='plankSec'?' sec':''}`);
+  }
+  p.sessions=p.sessions.slice(-300);save();render();toast(`PERFORMANCE ENREGISTRÉE • ${labels[type]}`);
+}
+function setBaseline(){
+  const p=state.physical;
+  const vals=['pushups','pullups','squats','runKm','plankSec'];
+  for(const k of vals){const v=prompt(`Valeur de départ — ${k}`,String(p.baseline[k]||0));if(v!==null&&!isNaN(+v))p.baseline[k]=Math.max(0,+v)}
+  save();render();toast('Baseline physique mise à jour');
+}
 function gain(xp,gold,reason){state.xp+=xp;state.totalXp+=xp;state.gold+=gold||0;log(`+${xp} XP${gold?` • +${gold} GOLD`:''} — ${reason}`);let leveled=false;while(state.xp>=need()){state.xp-=need();state.level++;state.gold+=50;leveled=true;log(`⬆ LEVEL UP → Niveau ${state.level} • +50 GOLD`)}save();render();if(leveled)levelModal();else{sound('complete');toast(`+${xp} XP${gold?` • +${gold} GOLD`:''}`)}}
 function log(x){state.history.unshift(new Date().toLocaleString('fr-FR')+' — '+x);state.history=state.history.slice(0,150)}
-function ensureQuests(){let d=localStorage.getItem('THE_SYSTEM_V4_QUEST_DAY');if(d!==today()){state.quests=baseQuests.map(x=>({id:x[0],name:x[1],xp:x[2],gold:x[3],stat:x[4],done:false}));localStorage.setItem('THE_SYSTEM_V4_QUEST_DAY',today());save()}}
-function completeQuest(i){let q=state.quests[i];if(!q||q.done)return;q.done=true;gain(q.xp,q.gold,q.name);checkAchievements();render()}
+function ensureQuests(){
+  let d=localStorage.getItem('THE_SYSTEM_PLAYER_QUEST_DAY');
+  if(d!==today()){
+    const t=adaptiveTraining();
+    state.quests=[
+      {id:'work',name:'Journée de travail terminée',xp:100,gold:30,stat:'disc',done:false},
+      {id:'sportq',name:`Entraînement — ${t.push} pompes • ${t.squats} squats • ${t.plank}s gainage`,xp:70+Math.round(state.level*2),gold:12,stat:'str',done:false,difficulty:Math.min(10,Math.max(1,Math.ceil(state.level/5)))},
+      {id:'readq',name:'Lire 20 minutes',xp:30,gold:5,stat:'int',done:false}
+    ];
+    localStorage.setItem('THE_SYSTEM_PLAYER_QUEST_DAY',today());save();
+  }
+}
+function completeQuest(i){
+  let q=state.quests[i];if(!q||q.done)return;
+  q.done=true;
+  if(q.id==='sportq'){state.physical.disciplineActions++;state.physical.sessions.push({date:today(),type:'quest-training',amount:1});}
+  if(q.stat==='int')state.physical.learningMinutes+=20;
+  if(q.stat==='disc')state.physical.disciplineActions++;
+  gain(q.xp,q.gold,q.name);checkAchievements();render()
+}
 function addQuestPreset(name,xp,gold,stat){state.quests.push({id:'q_'+Date.now(),name,xp,gold,stat,done:false});save();render()}
 function addQuest(){let n=document.getElementById('customName').value.trim(),xp=+document.getElementById('customXp').value||25;if(!n)return;addQuestPreset(n,xp,Math.max(1,Math.round(xp/5)),'focus');document.getElementById('customName').value=''}
 function dailyData(){let d=JSON.parse(localStorage.getItem(DAILY_KEY)||'null');if(!d)d={actions:defaultsDaily.map(x=>({id:x[0],name:x[1],xp:x[2],gold:x[3]})),days:{},custom:{}};d.actions=d.actions||[];d.days=d.days||{};d.days[today()]=d.days[today()]||{};localStorage.setItem(DAILY_KEY,JSON.stringify(d));return d}
@@ -59,8 +214,20 @@ function levelModal(){document.getElementById('modalBox').innerHTML=`<div class=
 function closeModal(){document.getElementById('modal').classList.remove('open')}
 function go(id){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.getElementById('drawer').classList.remove('open');render()}
 function toggleMenu(){document.getElementById('drawer').classList.toggle('open');sound('click')}
-function setSound(v){state.settings.sound=v;save();if(v)sound('click')}function exportData(){let blob=new Blob([JSON.stringify({state,daily:dailyData(),plans:plans()},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='the-system-backup.json';a.click();URL.revokeObjectURL(a.href)}function importData(){let i=document.createElement('input');i.type='file';i.accept='.json';i.onchange=()=>{let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(x.state)state=x.state;if(x.daily)localStorage.setItem(DAILY_KEY,JSON.stringify(x.daily));if(x.plans)localStorage.setItem(PLAN_KEY,JSON.stringify(x.plans));save();render();toast('Données importées')}catch(e){toast('Fichier invalide')}};r.readAsText(i.files[0])};i.click()}function resetAll(){if(!confirm('Supprimer toute la progression, le planning et les finances ?'))return;localStorage.removeItem(KEY);localStorage.removeItem(DAILY_KEY);localStorage.removeItem(PLAN_KEY);localStorage.removeItem('THE_SYSTEM_V4_QUEST_DAY');location.reload()}
-function render(){ensureQuests();let st=currentStreak(),ds=dailyStats();state.streak=st;save();document.getElementById('rank').textContent=rank();document.getElementById('level').textContent=state.level;document.getElementById('xpText').textContent=`${state.xp} / ${need()} XP`;document.getElementById('goldText').textContent=state.gold;document.getElementById('totalXp').textContent=state.totalXp;document.getElementById('xpFill').style.width=Math.min(100,state.xp/need()*100)+'%';document.getElementById('streak').textContent=st;document.getElementById('todayProgress').textContent=`${ds.count}/${ds.total}`;document.getElementById('todayXp').textContent=ds.xp;document.getElementById('todayFill').style.width=(ds.total?ds.count/ds.total*100:0)+'%';document.getElementById('homeQuests').innerHTML=state.quests.slice(0,4).map((q,i)=>`<div class="quest ${q.done?'done':''}"><input type="checkbox" ${q.done?'checked disabled':''} onchange="completeQuest(${i})"><div class="qbody"><div class="qname">${esc(q.name)}</div><div class="qmeta">Daily Quest • +${q.gold} GOLD</div></div><div class="qxp">+${q.xp} XP</div></div>`).join('');document.getElementById('questList').innerHTML=state.quests.map((q,i)=>`<div class="quest ${q.done?'done':''}"><input type="checkbox" ${q.done?'checked disabled':''} onchange="completeQuest(${i})"><div class="qbody"><div class="qname">${esc(q.name)}</div><div class="qmeta">+${q.gold} GOLD</div></div><div class="qxp">+${q.xp} XP</div></div>`).join('');document.getElementById('qcount').textContent=`${state.quests.filter(q=>q.done).length}/${state.quests.length}`;renderDaily();renderPlanning();renderFinance();renderAchievements();renderInventory();renderHistory();document.getElementById('systemAlert').textContent=state.quests.filter(q=>!q.done).length?`${state.quests.filter(q=>!q.done).length} quête(s) disponibles. Le système attend ton prochain mouvement.`:'Toutes les quêtes actuelles sont terminées. Profite de ta progression.';document.getElementById('soundToggle').checked=state.settings.sound;document.getElementById('volume').value=state.settings.volume}
+function setSound(v){state.settings.sound=v;save();if(v)sound('click')}function exportData(){let blob=new Blob([JSON.stringify({state,daily:dailyData(),plans:plans()},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='THE_SYSTEM_PLAYER_SAVE.json';a.click();URL.revokeObjectURL(a.href)}function importData(){let i=document.createElement('input');i.type='file';i.accept='.json';i.onchange=()=>{let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(x.state)state=x.state;if(x.daily)localStorage.setItem(DAILY_KEY,JSON.stringify(x.daily));if(x.plans)localStorage.setItem(PLAN_KEY,JSON.stringify(x.plans));save();render();toast('Données importées')}catch(e){toast('Fichier invalide')}};r.readAsText(i.files[0])};i.click()}function resetAll(){if(!confirm('Supprimer toute la progression, le planning et les finances ?'))return;localStorage.removeItem(KEY);localStorage.removeItem(DAILY_KEY);localStorage.removeItem(PLAN_KEY);localStorage.removeItem('THE_SYSTEM_PLAYER_QUEST_DAY');location.reload()}
+
+function renderPhysical(){
+  const s=physicalStatScore(),names={str:['STR','FORCE'],end:['END','ENDURANCE'],agi:['AGI','AGILITÉ'],vit:['VIT','VITALITÉ'],int:['INT','INTELLIGENCE'],disc:['DISC','DISCIPLINE']};
+  const el=document.getElementById('physicalStats');
+  if(el)el.innerHTML=Object.entries(names).map(([k,v])=>`<div class="rpg-stat"><div class="stat-code">${v[0]}</div><b>${s[k]}</b><small>${v[1]}</small><div class="stat-meter"><i style="width:${s[k]}%"></i></div></div>`).join('');
+  const p=state.physical,c=p.current;
+  const metrics=[['pushups','POMPES','reps'],['pullups','TRACTIONS','reps'],['squats','SQUATS','reps'],['runKm','COURSE','km'],['plankSec','GAINAGE','sec']];
+  const evo=document.getElementById('physicalEvolution');
+  if(evo)evo.innerHTML=metrics.map(m=>`<div class="evo-card"><div class="row"><span class="tiny muted">${m[1]}</span><b>${c[m[0]]||0} ${m[2]}</b></div><div class="evo-delta">${pctEvolution(m[0])>=0?'+':''}${pctEvolution(m[0])}% depuis BASE</div></div>`).join('');
+  const t=adaptiveTraining(),at=document.getElementById('adaptiveTarget');
+  if(at)at.textContent=`PROCHAINE CIBLE : ${t.push} POMPES • ${t.squats} SQUATS • ${t.plank}s`;
+}
+function render(){ensureQuests();renderPhysical();let st=currentStreak(),ds=dailyStats();state.streak=st;save();document.getElementById('rank').textContent=rank();document.getElementById('level').textContent=state.level;document.getElementById('xpText').textContent=`${state.xp} / ${need()} XP`;document.getElementById('goldText').textContent=state.gold;document.getElementById('totalXp').textContent=state.totalXp;document.getElementById('xpFill').style.width=Math.min(100,state.xp/need()*100)+'%';document.getElementById('streak').textContent=st;document.getElementById('todayProgress').textContent=`${ds.count}/${ds.total}`;document.getElementById('todayXp').textContent=ds.xp;document.getElementById('todayFill').style.width=(ds.total?ds.count/ds.total*100:0)+'%';document.getElementById('homeQuests').innerHTML=state.quests.slice(0,4).map((q,i)=>`<div class="quest ${q.done?'done':''}"><input type="checkbox" ${q.done?'checked disabled':''} onchange="completeQuest(${i})"><div class="qbody"><div class="qname">${esc(q.name)}</div><div class="qmeta">Daily Quest • +${q.gold} GOLD</div></div><div class="qxp">+${q.xp} XP</div></div>`).join('');document.getElementById('questList').innerHTML=state.quests.map((q,i)=>`<div class="quest ${q.done?'done':''}"><input type="checkbox" ${q.done?'checked disabled':''} onchange="completeQuest(${i})"><div class="qbody"><div class="qname">${esc(q.name)}</div><div class="qmeta">+${q.gold} GOLD</div></div><div class="qxp">+${q.xp} XP</div></div>`).join('');document.getElementById('qcount').textContent=`${state.quests.filter(q=>q.done).length}/${state.quests.length}`;renderDaily();renderPlanning();renderFinance();renderAchievements();renderInventory();renderHistory();document.getElementById('systemAlert').textContent=state.quests.filter(q=>!q.done).length?`${state.quests.filter(q=>!q.done).length} quête(s) disponibles. Le système attend ton prochain mouvement.`:'Toutes les quêtes actuelles sont terminées. Profite de ta progression.';document.getElementById('soundToggle').checked=state.settings.sound;document.getElementById('volume').value=state.settings.volume}
 function renderDaily(){let s=dailyStats(),st=currentStreak();document.getElementById('dailyCount').textContent=`${s.count}/${s.total}`;document.getElementById('dailyXp').textContent=`${s.xp} XP`;let bonus=s.count>=s.total&&s.total?100:s.count>=5?50:s.count>=3?20:0;document.getElementById('dailyBonusText').textContent=`Bonus du jour : ${bonus} XP • 🔥 Série : ${st}`;document.getElementById('dailyList').innerHTML=s.d.actions.map(a=>`<div class="daily-action ${s.done[a.id]?'daily-done':''}"><input class="daily-check" type="checkbox" ${s.done[a.id]?'checked disabled':''} onchange="toggleDaily('${esc(a.id)}')"><div class="daily-info"><b class="daily-name">${esc(a.name)}</b><small>+${a.xp} XP • +${a.gold} GOLD</small></div>${String(a.id).startsWith('custom_')&&!s.done[a.id]?`<button onclick="deleteDaily('${esc(a.id)}')">✕</button>`:''}<b style="color:${s.done[a.id]?'var(--green)':'var(--muted)'}">${s.done[a.id]?'✓ FAIT':'À FAIRE'}</b></div>`).join('')}
 function deleteDaily(id){let d=dailyData();d.actions=d.actions.filter(x=>x.id!==id);localStorage.setItem(DAILY_KEY,JSON.stringify(d));render()}
 function renderPlanning(){let grid=document.getElementById('planningGrid'),p=plans(),k=wk(),start=weekMonday(new Date());start.setDate(start.getDate()+weekOffset*7);let end=new Date(start);end.setDate(end.getDate()+6);document.getElementById('weekLabel').textContent=`Semaine du ${start.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})} au ${end.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit',year:'numeric'})}`;let days=['LUN','MAR','MER','JEU','VEN','SAM','DIM'];let arr=p[k]||Array.from({length:7},()=>[]);grid.innerHTML=days.map((n,i)=>{let d=new Date(start);d.setDate(d.getDate()+i);return `<div class="day-card"><div class="day-head">${n}<div class="day-date">${d.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})}</div></div>${(arr[i]||[]).map((x,j)=>`<div class="plan-item"><b>${esc(x.name)}</b>${x.time?`<div class="plan-time">⏰ ${esc(x.time)}</div>`:''}<div class="plan-actions"><button onclick="editPlan(${i},${j})">✎</button><button onclick="deletePlan(${i},${j})">✕</button></div></div>`).join('')}<button class="plan-add" onclick="addPlan(${i})">+ AJOUTER</button></div>`}).join('')}
@@ -74,7 +241,7 @@ render();checkAchievements();
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js?v=4.1')
+    navigator.serviceWorker.register('./sw.js?v=5.0')
       .then(reg => {
         if (reg.waiting) reg.waiting.postMessage({type:'SKIP_WAITING'});
         reg.addEventListener('updatefound', () => {
